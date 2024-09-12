@@ -5,6 +5,9 @@ disable=
       C0115, # Missing-class-docstring
       C0116, # Missing-function-docstring
       E0015,
+      C0303, # Trailing-whitespace
+      C0305, # Trailing-newlines
+
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
