@@ -1,7 +1,8 @@
 from typing import Dict, Union # usado para retornar um dicionário
 import requests
+from .interfaces.http_requester import HttpRequesterInterface
 
-class HttpRequester:
+class HttpRequester(HttpRequesterInterface):
 
     def __init__(self) -> None:
         # __url: __ no começo significa que é um atributo privado

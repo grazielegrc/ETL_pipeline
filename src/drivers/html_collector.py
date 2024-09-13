@@ -1,7 +1,9 @@
+#pylint: disable=arguments-differ
 from typing import List, Dict
 from bs4 import BeautifulSoup
+from .interfaces.html_collector import HtmlCollectorInterface
 
-class HtmlCollector:
+class HtmlCollector(HtmlCollectorInterface):
 
     @classmethod
     def collect_essential_information(cls, html: str) -> List[Dict[str, str]]:

@@ -7,6 +7,8 @@ def test_request_from_page(requests_mock):
 
     http_requester = HttpRequester()
     request_response = http_requester.request_from_page()
+    
+    print(request_response)
 
     assert 'status_code' in request_response
     assert 'html' in request_response

@@ -5,8 +5,8 @@ def test_collect_essential_information():
     http_request_response = mock_request_from_page()
     
     html_collector = HtmlCollector()
-    essential_information = html_collector.collect_essential_information(http_request_response["html"])
-    
+    essential_information = html_collector.collect_essential_information(http_request_response["html"])   
+
     # verifica se o retorno é uma lista
     assert isinstance(essential_information, list)
     # verifica se o elemento dentro da lista é um dicionário
