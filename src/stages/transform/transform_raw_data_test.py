@@ -6,6 +6,7 @@ from .transform_raw_data import TransformRawData
 def test_transform():
     transform_raw_data = TransformRawData()
     transformed_data_content = transform_raw_data.transform(extract_contract_mock)
+    print(transformed_data_content)
     
     assert isinstance(transformed_data_content, TransformContract)
     assert "first_name" in transformed_data_content.load_content[0]
