@@ -1,6 +1,6 @@
 from typing import Dict
 from .database_connector import DatabaseConnector
-from .interface.database_repository import DatabaseRepositoryInterface
+from .interfaces.database_repository import DatabaseRepositoryInterface
 
 class DatabaseRepository(DatabaseRepositoryInterface):
     connection = None
